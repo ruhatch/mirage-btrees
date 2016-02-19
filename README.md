@@ -1,5 +1,5 @@
-# mirage-oram
+# mirage-btrees
 
-[![Build Status](https://travis-ci.org/ruhatch/mirage-oram.svg?branch=master)](https://travis-ci.org/ruhatch/mirage-oram)
+[![Build Status](https://travis-ci.org/ruhatch/mirage-btrees.svg?branch=master)](https://travis-ci.org/ruhatch/mirage-btrees)
 
-Final year undergraduate project, that is an implementation of [Path ORAM](https://eprint.iacr.org/2013/280.pdf) on MirageOS
+An implementation of BTrees designed to be used with MirageOS
