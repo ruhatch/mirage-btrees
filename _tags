@@ -1,0 +1,30 @@
+# OASIS_START
+# DO NOT EDIT (digest: 35d5d37d206f81c5491df09e716514c5)
+# Ignore VCS directories, you can use the same kind of rule outside
+# OASIS_START/STOP if you want to exclude directories that contains
+# useless stuff for the build process
+true: annot, bin_annot
+<**/.svn>: -traverse
+<**/.svn>: not_hygienic
+".bzr": -traverse
+".bzr": not_hygienic
+".hg": -traverse
+".hg": not_hygienic
+".git": -traverse
+".git": not_hygienic
+"_darcs": -traverse
+"_darcs": not_hygienic
+# Library mirage_btrees
+"lib/mirage_btrees.cmxs": use_mirage_btrees
+<lib/*.ml{,i,y}>: pkg_bisect_ppx
+<lib/*.ml{,i,y}>: pkg_cstruct
+# Executable node_tests
+<tests/node_tests.{native,byte}>: pkg_alcotest
+<tests/node_tests.{native,byte}>: pkg_bisect_ppx
+<tests/node_tests.{native,byte}>: pkg_cstruct
+<tests/node_tests.{native,byte}>: use_mirage_btrees
+<tests/*.ml{,i,y}>: pkg_alcotest
+<tests/*.ml{,i,y}>: pkg_bisect_ppx
+<tests/*.ml{,i,y}>: pkg_cstruct
+<tests/*.ml{,i,y}>: use_mirage_btrees
+# OASIS_STOP

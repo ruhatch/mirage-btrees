@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: 656f540902cb0ede458dc8be6c19931a)
+version = "0.0.1"
+description = "An implementation of BTrees designed for use with MirageOS"
+requires = "bisect_ppx cstruct"
+archive(byte) = "mirage_btrees.cma"
+archive(byte, plugin) = "mirage_btrees.cma"
+archive(native) = "mirage_btrees.cmxa"
+archive(native, plugin) = "mirage_btrees.cmxs"
+exists_if = "mirage_btrees.cma"
+# OASIS_STOP
+

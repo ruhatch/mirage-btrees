@@ -1,0 +1,50 @@
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+
+# ocamlbuild working directory
+_build/
+_tests/
+
+# ocamlbuild targets
+*.byte
+*.native
+
+# oasis generated files
+setup.data
+setup.log
+
+# Mirage generated files
+*.xe
+*.xl
+*.xl.in
+*.xml
+mir-*
+/*/Makefile
+/*/main.ml
+log
+*.img
+
+# LaTeX files
+.texpadtmp/
+
+# Test files
+testFiles/
+*.input
+*.output
+*.test
+*.out
+*.dat
+
+# Emacs
+*~
+*#*#
+
+# Reports
+/report_dir

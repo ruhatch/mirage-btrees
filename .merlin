@@ -1,0 +1,16 @@
+S lib
+S tests
+
+B _build/lib
+B _build/tests
+
+PKG lwt
+PKG lwt.ppx
+PKG mirage
+PKG core
+PKG core_kernel
+PKG core_bench
+PKG cstruct
+PKG alcotest
+
+EXT lwt.ppx

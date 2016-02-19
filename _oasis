@@ -1,0 +1,36 @@
+Name: mirage-btrees
+Version: 0.0.1
+Synopsis: An implementation of BTrees designed for use with MirageOS
+Authors: Rupert Horlick <ruhatch@me.com>
+License: LGPL with OCaml linking exception
+
+Description: An implementation of BTrees designed for use with MirageOS
+Homepage: https://github.com/ruhatch/mirage-btrees
+
+OASISFormat: 0.4
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+                    
+Library mirage_btrees
+  Path:             lib
+  Findlibname:      mirage-btrees
+  Modules:          BTree,
+                    Node
+  BuildDepends:     bisect_ppx,
+                    cstruct
+
+Executable node_tests
+  Path:             tests
+  MainIs:           node_tests.ml
+  Build$:           flag(tests)
+  CompiledObject:   best
+  Install:          false
+  BuildDepends:     bisect_ppx,
+                    mirage-btrees,
+                    alcotest
+                    
+Test node_tests
+  Run$:             flag(tests)
+  TestTools:        node_tests
+  Command:          $node_tests
+  WorkingDirectory: tests
