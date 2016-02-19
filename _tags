@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: 35d5d37d206f81c5491df09e716514c5)
+# DO NOT EDIT (digest: 28355a4949762ce388c93f2cb4202ab1)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -21,10 +21,12 @@ true: annot, bin_annot
 # Executable node_tests
 <tests/node_tests.{native,byte}>: pkg_alcotest
 <tests/node_tests.{native,byte}>: pkg_bisect_ppx
+<tests/node_tests.{native,byte}>: pkg_core_kernel
 <tests/node_tests.{native,byte}>: pkg_cstruct
 <tests/node_tests.{native,byte}>: use_mirage_btrees
 <tests/*.ml{,i,y}>: pkg_alcotest
 <tests/*.ml{,i,y}>: pkg_bisect_ppx
+<tests/*.ml{,i,y}>: pkg_core_kernel
 <tests/*.ml{,i,y}>: pkg_cstruct
 <tests/*.ml{,i,y}>: use_mirage_btrees
 # OASIS_STOP

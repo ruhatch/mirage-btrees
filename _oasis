@@ -27,7 +27,8 @@ Executable node_tests
   Install:          false
   BuildDepends:     bisect_ppx,
                     mirage-btrees,
-                    alcotest
+                    alcotest,
+                    core_kernel
                     
 Test node_tests
   Run$:             flag(tests)

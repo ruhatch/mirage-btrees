@@ -1,6 +1,6 @@
 opam-version: "1.2"
 name: "mirage-btrees"
-version: "0.0.1"
+version: "0.1.0"
 maintainer: "ruhatch <ruhatch@me.com>"
 authors: "ruhatch <ruhatch@me.com>"
 homepage: "https://github.com/ruhatch/mirage-btrees"
@@ -19,4 +19,5 @@ depends: [
   "ocamlfind" {build}
   "bisect_ppx" {>= "1.0.0"}
   "cstruct" {>= "1.8.0"}
+  "core_kernel" {>= "113.00.00"}
 ]
