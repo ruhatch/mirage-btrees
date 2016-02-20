@@ -1,5 +1,5 @@
 Name: mirage-btrees
-Version: 0.0.1
+Version: 0.1.0
 Synopsis: An implementation of BTrees designed for use with MirageOS
 Authors: Rupert Horlick <ruhatch@me.com>
 License: LGPL with OCaml linking exception
