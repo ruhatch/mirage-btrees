@@ -12,6 +12,10 @@ build: [
  [make "build"]
 ]
 install: [make "install"]
+build-test: [
+  ["./configure" "--enable-tests"]
+  [make "test"]
+]
 remove: [
   ["ocamlfind" "remove" "mirage-btrees"]
 ]
@@ -20,4 +24,5 @@ depends: [
   "bisect_ppx" {>= "1.0.0"}
   "cstruct" {>= "1.8.0"}
   "core_kernel" {>= "113.00.00"}
+  "alcotest" {test}
 ]
