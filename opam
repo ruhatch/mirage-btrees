@@ -23,6 +23,6 @@ depends: [
   "ocamlfind" {build}
   "bisect_ppx" {>= "1.0.0"}
   "cstruct" {>= "1.8.0"}
-  "core_kernel" {>= "113.00.00"}
+  "core_kernel" {>= "113.24.00"}
   "alcotest" {test}
 ]
