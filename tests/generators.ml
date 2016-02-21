@@ -3,6 +3,8 @@ open Quickcheck.Generator
 
 module Test = Core_kernel.Std.Quickcheck.Generator
 
+let test = Test.bool
+
 let addressGenerator sizeSectors =
   let upper_bound = Excl (Int64.to_int_exn sizeSectors) in
   Test.int_between ~lower_bound:(Incl 0) ~upper_bound
