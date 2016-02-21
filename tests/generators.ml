@@ -1,13 +1,13 @@
 open Core_kernel.Std
 open Quickcheck.Generator
 
-module Test = Core_kernel.Std.Quickcheck.Generator
+module Test = Core_kernel.Std.Quickcheck
 
-let test = Test.bool
+let test = Test.iter
 
 let addressGenerator sizeSectors =
   let upper_bound = Excl (Int64.to_int_exn sizeSectors) in
-  Test.int_between ~lower_bound:(Incl 0) ~upper_bound
+  int_between ~lower_bound:(Incl 0) ~upper_bound
   >>| fun x -> Int64.of_int x
 
 let cstructGenerator size =
