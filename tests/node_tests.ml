@@ -41,7 +41,7 @@ let node_tests =
     "NodeSetLeaf_QuickCheck_GetSameLeaf", `Quick,
     (fun () ->
       let node = Node.create 512 in
-      Quickcheck.test Quickcheck.Generator.bool
+      Quickcheck.test Bool.gen
                       (fun leaf ->
                         Node.setLeaf node leaf;
                         check bool "" leaf (Node.leaf node)));
